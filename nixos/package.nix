@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage rec {
     sha256 = "1baavqaxx9gnrvyq4hfng4cqi08f7bqcbw3f0v5f09gnsrcv4q56";
   };
 
-  cargoSha256 = "15v8ppdhvimnv7akljjc6jr165sfggdhdyx9y7v5i1bl8v71jd0d";
+  cargoSha256 = "1wx8a2syq9wad8ljadzw06xmcyv5fxiva2q9whpsz50kb5k42mqm";
 
   meta = with lib; {
     homepage = "https://github.com/schnusch/${pname}";
