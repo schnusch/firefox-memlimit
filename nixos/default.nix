@@ -22,5 +22,13 @@ in
 
   config = mkIf cfg.enable {
     security.wrappers.firefox-memlimit.source = "${package.out}/bin/firefox-memlimit";
+
+    warnings = [
+      ''
+        firefox-memlimit is obsolete. Use
+        	systemd-run --user --scope -p MemoryMax=1G firefox
+        instead.
+      ''
+    ];
   };
 }
